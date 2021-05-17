@@ -1,0 +1,46 @@
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  annotations:
+    app.openshift.io/vcs-ref: ''
+    app.openshift.io/vcs-uri: 'https://github.com/pablopaniagua1/demotechsummit.git'
+    openshift.io/generated-by: OpenShiftWebConsole
+  resourceVersion: '23659906'
+  name: demotechsummit-git
+  uid: 5c19ea99-4e3c-4f07-be92-1f5e3eb92f0b
+  creationTimestamp: '2021-05-17T08:47:00Z'
+  generation: 1
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: image.openshift.io/v1
+      time: '2021-05-17T08:47:00Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:app.openshift.io/vcs-ref': {}
+            'f:app.openshift.io/vcs-uri': {}
+            'f:openshift.io/generated-by': {}
+          'f:labels':
+            .: {}
+            'f:app': {}
+            'f:app.kubernetes.io/component': {}
+            'f:app.kubernetes.io/instance': {}
+            'f:app.kubernetes.io/name': {}
+            'f:app.kubernetes.io/part-of': {}
+            'f:app.openshift.io/runtime': {}
+            'f:app.openshift.io/runtime-version': {}
+  namespace: demotechsummit
+  labels:
+    app: demotechsummit-git
+    app.kubernetes.io/component: demotechsummit-git
+    app.kubernetes.io/instance: demotechsummit-git
+    app.kubernetes.io/name: httpd
+    app.kubernetes.io/part-of: demotechsummit-git-app
+    app.openshift.io/runtime: httpd
+    app.openshift.io/runtime-version: 2.4-el7
+spec:
+  lookupPolicy:
+    local: false

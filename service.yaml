@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  annotations:
+    app.openshift.io/vcs-ref: ''
+    app.openshift.io/vcs-uri: 'https://github.com/pablopaniagua1/demotechsummit.git'
+    openshift.io/generated-by: OpenShiftWebConsole
+  selfLink: /api/v1/namespaces/demotechsummit/services/demotechsummit-git
+  resourceVersion: '23648874'
+  name: demotechsummit-git
+  namespace: demotechsummit
+  labels:
+    app: demotechsummit-git
+    app.kubernetes.io/component: demotechsummit-git
+    app.kubernetes.io/instance: demotechsummit-git
+    app.kubernetes.io/name: httpd
+    app.kubernetes.io/part-of: demotechsummit-git-app
+    app.openshift.io/runtime: httpd
+    app.openshift.io/runtime-version: 2.4-el7
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    - name: 8443-tcp
+      protocol: TCP
+      port: 8443
+      targetPort: 8443
+  selector:
+    app: demotechsummit-git
+    deploymentconfig: demotechsummit-git
+  type: ClusterIP
+  sessionAffinity: None
+

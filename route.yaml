@@ -1,0 +1,23 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: demotechsummit-git
+  namespace: demotechsummit
+  labels:
+    app: demotechsummit-git
+    app.kubernetes.io/component: demotechsummit-git
+    app.kubernetes.io/instance: demotechsummit-git
+    app.kubernetes.io/name: httpd
+    app.kubernetes.io/part-of: demotechsummit-git-app
+    app.openshift.io/runtime: httpd
+    app.openshift.io/runtime-version: 2.4-el7
+spec:
+  host: demosummit.10.1.14.6.nip.io
+  to:
+    kind: Service
+    name: demotechsummit-git
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None
+
