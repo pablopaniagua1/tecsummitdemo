@@ -29,5 +29,5 @@ spec:
     app: demotechsummit-git
     deploymentconfig: demotechsummit-git
   type: ClusterIP
-  sessionAffinity: None
+    
 
