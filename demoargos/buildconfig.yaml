@@ -5,65 +5,7 @@ metadata:
     app.openshift.io/vcs-ref: ''
     app.openshift.io/vcs-uri: 'https://github.com/pablopaniagua1/demotechsummit.git'
     openshift.io/generated-by: OpenShiftWebConsole
-  resourceVersion: '23659768'
   name: demotechsummit-git
-  uid: 7c91e053-7e0b-483e-b25a-864af6cb7542
-  creationTimestamp: '2021-05-17T08:47:00Z'
-  generation: 4
-  managedFields:
-    - manager: Mozilla
-      operation: Update
-      apiVersion: build.openshift.io/v1
-      time: '2021-05-17T08:47:00Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:metadata':
-          'f:annotations':
-            .: {}
-            'f:app.openshift.io/vcs-ref': {}
-            'f:app.openshift.io/vcs-uri': {}
-            'f:openshift.io/generated-by': {}
-          'f:labels':
-            .: {}
-            'f:app': {}
-            'f:app.kubernetes.io/component': {}
-            'f:app.kubernetes.io/instance': {}
-            'f:app.kubernetes.io/name': {}
-            'f:app.kubernetes.io/part-of': {}
-            'f:app.openshift.io/runtime': {}
-            'f:app.openshift.io/runtime-version': {}
-        'f:spec':
-          'f:output':
-            'f:to':
-              .: {}
-              'f:kind': {}
-              'f:name': {}
-          'f:runPolicy': {}
-          'f:source':
-            'f:contextDir': {}
-            'f:git':
-              .: {}
-              'f:uri': {}
-            'f:type': {}
-          'f:strategy':
-            'f:sourceStrategy':
-              .: {}
-              'f:from':
-                .: {}
-                'f:kind': {}
-                'f:name': {}
-                'f:namespace': {}
-            'f:type': {}
-    - manager: openshift-apiserver
-      operation: Update
-      apiVersion: build.openshift.io/v1
-      time: '2021-05-17T08:47:00Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:spec':
-          'f:triggers': {}
-        'f:status':
-          'f:lastVersion': {}
   namespace: demotechsummit
   labels:
     app: demotechsummit-git
