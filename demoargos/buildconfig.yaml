@@ -38,9 +38,6 @@ spec:
     contextDir: /
   triggers:
     - type: ImageChange
-      imageChange:
-        lastTriggeredImageID: >-
-          image-registry.openshift-image-registry.svc:5000/openshift/httpd@sha256:ff0e23e9f85170a80b6e9755cecad5d06d3fc9e17a4fae6ba7982923aa6b4d45
     - type: ConfigChange
   runPolicy: Serial
 
