@@ -9,7 +9,6 @@ metadata:
       [{"from":{"kind":"ImageStreamTag","name":"demotechsummit-git:latest","namespace":"demotechsummit"},"fieldPath":"spec.template.spec.containers[?(@.name==\"demotechsummit-git\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
   name: demotechsummit-git
-  generation: 4
   namespace: demotechsummit
   labels:
     app: demotechsummit-git
@@ -32,8 +31,7 @@ spec:
     spec:
       containers:
         - name: demotechsummit-git
-          image: >-
-            image-registry.openshift-image-registry.svc:5000/demotechsummit/demotechsummit:latest
+          image: demotechsummit/demotechsummit:latest
           ports:
             - containerPort: 8080
               protocol: TCP

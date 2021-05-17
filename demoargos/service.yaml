@@ -5,8 +5,6 @@ metadata:
     app.openshift.io/vcs-ref: ''
     app.openshift.io/vcs-uri: 'https://github.com/pablopaniagua1/demotechsummit.git'
     openshift.io/generated-by: OpenShiftWebConsole
-  selfLink: /api/v1/namespaces/demotechsummit/services/demotechsummit-git
-  resourceVersion: '23648874'
   name: demotechsummit-git
   namespace: demotechsummit
   labels:
