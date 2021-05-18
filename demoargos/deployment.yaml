@@ -32,7 +32,7 @@ spec:
       containers:
         - name: demotechsummit-git
           image: >-
-            image-registry.openshift-image-registry.svc:5000/demotechsummit/demotechsummit-git@sha256:ca2be769c2688b89e0866d11667f7ddba0bfecd09de7057bf8f5c1f848498731
+            image-registry.openshift-image-registry.svc:5000/demotechsummit/demotechsummit-git:latest
           ports:
             - containerPort: 8080
               protocol: TCP
